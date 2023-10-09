@@ -8,14 +8,19 @@ img {
     max-width: 100%;
 }
 
-
+:root {
+    --lightgreen: #1ABC9C;
+    --dark-bg: #2C3E50;
+}
 /* COMMON */
 .lightgreen-bg {
-    background-color: #1ABC9C;
+    background-color: var(--lightgreen);
 }
 /* Header */
+
+/* Nav */
 nav {
-    background-color: #2C3E50;
+    background-color: var(--dark-bg);
     height: 100px;
     line-height: 100px;
 }
@@ -33,11 +38,36 @@ nav i{
     padding: 0.5rem;
     border-radius: 0.2rem;
 }
+@media screen and (min-width: 992px) {
+    nav .fa-bars {
+        display: none;
+    }
+}
 
 nav h4 {
     margin-bottom: 0;
 }
 
+.navbar {
+    display: none;
+    padding: 0;
+}
+@media screen and (min-width: 992px) {
+    .navbar {
+        display: block;
+    }
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
 /* Hero */
 .hero {
     width: 100%;
@@ -89,4 +119,83 @@ nav h4 {
 .col-debug {
     background-color: blue;
     min-height: 250px ;
+}
+
+/* About */
+.about {
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* Debug */
+    min-height: 600px;
+}
+
+.portfolio a {
+    text-decoration: none;
+}
+
+.portfolio button {
+    background-color: var(--lightgreen);
+}
+
+/* Contact me */
+.contact-me {
+    width: 70%;
+    margin: 0 auto;
+    color: #333333;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-me form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FOOTER */
+footer {
+    color: white;
+}
+
+.footer-top {
+    background-color: #3A546D;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer-top ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+.footer-top ul li a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+.footer-bottom {
+    padding: 2rem;    
+    background-color: var(--dark-bg);
+    font-size: 0.7rem;
+}
+
+.lightgreen-text {
+    color: var(--lightgreen);
 }
