@@ -8,6 +8,11 @@ img {
     max-width: 100%;
 }
 
+
+/* COMMON */
+.lightgreen-bg {
+    background-color: #1ABC9C;
+}
 /* Header */
 nav {
     background-color: #2C3E50;
@@ -36,19 +41,16 @@ nav h4 {
 /* Hero */
 .hero {
     width: 100%;
-    background-color: #1ABC9C;
-    color: white;
-   
+    color: white; 
 }
 
 .hero img{
-    max-width: 50%;
+    max-width: 40%;
     margin-bottom: 0.5rem;
 }
 .inner-hero {
     padding-top: 1rem;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -68,7 +70,23 @@ nav h4 {
 
 .star hr {
     width: 35%;
-    color: white;
-    border: 2px double white;
+    border: 2px double;
 }
 
+/* MAIN */
+
+/* Portfolio */
+.portfolio {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.portfolio .star {
+    margin: 0 auto;
+}
+/* DEBUG */
+.col-debug {
+    background-color: blue;
+    min-height: 250px ;
+}
