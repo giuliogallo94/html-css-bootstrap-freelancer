@@ -4,6 +4,10 @@ body {
     margin: 0 auto;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Header */
 nav {
     background-color: #2C3E50;
@@ -28,3 +32,43 @@ nav i{
 nav h4 {
     margin-bottom: 0;
 }
+
+/* Hero */
+.hero {
+    width: 100%;
+    background-color: #1ABC9C;
+    color: white;
+   
+}
+
+.hero img{
+    max-width: 50%;
+    margin-bottom: 0.5rem;
+}
+.inner-hero {
+    padding-top: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inner-hero p {
+    font-size: 0.8rem;
+}
+
+.star {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.star hr {
+    width: 35%;
+    color: white;
+    border: 2px double white;
+}
+
