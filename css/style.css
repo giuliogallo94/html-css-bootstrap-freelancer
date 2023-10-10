@@ -83,6 +83,11 @@ nav h4 {
 .hero img {
   max-width: 40%;
 }
+@media screen and (min-width: 768px) {
+  .hero img {
+    width: 250px;
+  }
+}
 
 .star {
   width: 50%;
