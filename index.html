@@ -21,7 +21,7 @@
     <!-- Header -->
     <header>
       <!-- Nav -->
-      <nav>
+      <nav class="fixed-top">
         <div class="container">
           <h4>START BOOTSTRAP</h4>
           <a href=""><i class="fa-solid fa-bars"></i></a>
@@ -37,11 +37,11 @@
       <!-- /Nav -->
 
       <!-- Hero -->
-      <div class="hero lightgreen-bg">
+      <div class="hero lightgreen-bg py-4">
         <div class="container">
           <div class="row text-center">
             <div class="col-12"><img src="img/avatar.svg" alt="" /></div>
-            <div class="col-12"><h2>START BOOTSTRAP</h2></div>
+            <div class="col-12 mt-3"><h2>START BOOTSTRAP</h2></div>
             <div class="col-12">
               <div class="star">
                 <hr />
@@ -62,22 +62,53 @@
     <!-- Main -->
     <main>
       <!-- Portfolio -->
-      <section class="portfolio">
+      <section class="portfolio py-4 text-center">
         <h2>PORTFOLIO</h2>
         <div class="star">
           <hr />
           <i class="fa-solid fa-star"></i>
           <hr />
         </div>
-        <div class="container">
-          <div class="row g-2">
-            <div class="col-12 col-lg-6 col-xxl-4 col-debug"></div>
-            <div class="col-12 col-lg-6 col-xxl-4 col-debug"></div>
-            <div class="col-12 col-lg-6 col-xxl-4 col-debug"></div>
-            <div class="col-12 col-lg-6 col-xxl-4 col-debug"></div>
-            <div class="col-12 col-lg-6 col-xxl-4 col-debug"></div>
-            <div class="col-12 col-lg-6 col-xxl-4 col-debug"></div>
+        <div class="container mt-3">
+          <!-- Row -->
+          <div class="row g-4">
+            <!-- Col -->
+            <div class="col-12 col-lg-6 col-xxl-4">
+              <img class="rounded-3" src="img/cabin.png" alt="" />
+            </div>
+            <!-- /Col -->
+
+            <!-- Col -->
+            <div class="col-12 col-lg-6 col-xxl-4">
+              <img class="rounded-3" src="img/cake.png" alt="" />
+            </div>
+            <!-- /Col -->
+
+            <!-- Col -->
+            <div class="col-12 col-lg-6 col-xxl-4">
+              <img class="rounded-3" src="img/circus.png" alt="" />
+            </div>
+            <!-- /Col -->
+
+            <!-- Col -->
+            <div class="col-12 col-lg-6 col-xxl-4">
+              <img class="rounded-3" src="img/game.png" alt="" />
+            </div>
+            <!-- /Col -->
+
+            <!-- Col -->
+            <div class="col-12 col-lg-6 col-xxl-4">
+              <img class="rounded-3" src="img/safe.png" alt="" />
+            </div>
+            <!-- /Col -->
+
+            <!-- Col -->
+            <div class="col-12 col-lg-6 col-xxl-4">
+              <img class="rounded-3" src="img/submarine.png" alt="" />
+            </div>
+            <!-- /Col -->
           </div>
+          <!-- /Row -->
         </div>
       </section>
       <!-- /Portfolio -->
@@ -91,7 +122,7 @@
             <i class="fa-solid fa-star"></i>
             <hr />
           </div>
-          <div class="container">
+          <div class="container mt-2">
             <div class="row">
               <div class="col-12 col-lg-6">
                 <p>
@@ -103,15 +134,15 @@
               </div>
               <div class="col-12 col-lg-6">
                 <p>
-                  Wheter you're a student looking to showcase your work, a
-                  professional looking to attract clients, or a graphic artist
-                  looking to share your projects, this template is the perfect
-                  starting point!
+                  Freelancer is a free bootstrap theme created by Start
+                  Bootstrap. The download includes the complete source files
+                  including HTML, CSS, and JavaScript as well as optional LESS
+                  stylesheets for easy costumization.
                 </p>
               </div>
             </div>
           </div>
-          <button>
+          <button class="mt-4 p-2">
             <a href=""><i class="fa-solid fa-download"></i>Download</a>
           </button>
         </div>
@@ -126,13 +157,57 @@
           <i class="fa-solid fa-star"></i>
           <hr />
         </div>
-        <form action="">
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="button" />
-        </form>
+        <div class="row text-start">
+          <div class="col-12">
+            <div class="form-floating ms_form-floating mb-1">
+              <input
+                type="name"
+                class="form-control ms_form-control"
+                id=""
+                placeholder="name@example.com" />
+              <label class="ms_padding" for="floatingInput">Name</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-floating ms_form-floating mb-1">
+              <input
+                type="email"
+                class="form-control ms_form-control"
+                id="floatingInput"
+                placeholder="name@example.com" />
+              <label for="floatingInput">Email address</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-floating ms_form-floating mb-1">
+              <input
+                type="text"
+                class="form-control ms_form-control"
+                id="floatingInput"
+                placeholder="name@example.com" />
+              <label class="form-label" for="floatingInput">Phone Number</label>
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="col-12">
+            <div class="form-floating ms_form-floating">
+              <textarea
+                class="form-control ms_form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 200px"></textarea>
+              <label for="floatingTextarea2">Message</label>
+            </div>
+          </div>
+          <!-- /Textarea -->
+
+          <!-- Send Button -->
+          <div class="col-12">
+            <button type="button" class="btn btn_green mt-3">Send</button>
+          </div>
+          <!-- /Send Buttonk -->
+        </div>
       </section>
       <!-- /Contact me -->
     </main>
@@ -178,7 +253,6 @@
       <!-- Footer-bottom -->
       <div class="footer-bottom">Copyright @ Your Website 2019</div>
     </footer>
-
     <!-- /Footer -->
   </body>
 </html>
