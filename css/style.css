@@ -23,32 +23,32 @@ img {
 /* Header */
 
 /* Nav */
-nav {
+/* All tags nav changed with .ms_fixed-top to use Bootstrap Navbar */
+.ms_fixed-top {
   background-color: var(--dark-bg);
-  height: 100px;
-  line-height: 100px;
 }
 
-nav .container {
+.ms_fixed-top .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
+  height: 100px;
 }
 
-nav i {
+.ms_fixed-top i {
   color: #686f75;
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 0.2rem;
 }
 @media screen and (min-width: 992px) {
-  nav .fa-bars {
+  .ms_fixed-top .fa-bars {
     display: none;
   }
 }
 
-nav h4 {
+.ms_fixed-top h4 {
   margin-bottom: 0;
 }
 
@@ -62,14 +62,14 @@ nav h4 {
   }
 }
 
-.navbar ul {
+/* .navbar ul {
   list-style: none;
   display: flex;
   gap: 2rem;
-}
+} */
 
 .navbar ul li a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: white;
 }
 
